@@ -15,4 +15,6 @@ trap 'kill ${!}; term_handler' TERM
 ./playit -s -c "config/playit.toml" &
 pid="$!"
 
-while true; do :; done
+while :; do
+    tail -f /dev/null & wait ${!}
+done
