@@ -12,7 +12,7 @@ version: "3"
 services:
   playit:
     container_name: playit
-    image: ghcr.io/docker-collection/payit
+    image: ghcr.io/docker-collection/payit:latest
     network_mode: host
     restart: always
     volumes:
@@ -34,7 +34,7 @@ networks:
 services:
   playit:
     container_name: playit
-    image: ghcr.io/docker-collection/payit
+    image: ghcr.io/docker-collection/payit:latest
     networks:
       - pterodactyl_network
     restart: always
