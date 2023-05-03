@@ -7,7 +7,7 @@ ARG PLAYIT_VERSION=0.9.3
 RUN wget -O playit "https://github.com/playit-cloud/playit-agent/releases/download/v${PLAYIT_VERSION}/playit-${PLAYIT_VERSION}$([[ "$(uname -m)" == "x86_64" ]] && echo "" || echo "-aarch64")" && \
     chmod u+x playit
 
-FROM debian:bookworm-slim@sha256:e69f8a9d5a883a890b70a7e8b6b7cb0ebb60bf1779f64064b89b43a1bb65e346
+FROM debian:bookworm-slim@sha256:2fd76b2b011a8b171f9ee0540fb74e9be0dc55fafc8f7f2858a482c0e7776ebc
 
 WORKDIR /app
 
