@@ -1,4 +1,4 @@
-name: Docker Latest
+name: Docker Beta
 
 on:
   workflow_dispatch: {}
@@ -6,9 +6,9 @@ on:
     branches:
       - main
     paths:
-      - playit-latest/**
+      - playit-beta/**
     paths:
-      - playit-latest/**
+      - playit-beta/**
 
 concurrency: 
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -19,12 +19,12 @@ jobs:
     name: docker build
     uses: Docker-Collection/reusable-workflows/.github/workflows/docker-build.yml@main
     with:
-      docker_name: "ghcr.io/docker-collection/payit"
-      context: "playit-latest"
-      dockerfile: "playit-latest/Dockerfile"
+      docker_name: "ghcr.io/docker-collection/payit-beta"
+      context: "playit-beta"
+      dockerfile: "playit-beta/Dockerfile"
       docker_label_author: "Efina"
       docker_label_title: "Simple plyit.gg docker"
       docker_label_description: "playit.gg docker"
       version_detecter: true
-      version_detecter_file: "playit-latest/Dockerfile"
+      version_detecter_file: "playit-beta/Dockerfile"
       version_detecter_var: "PLAYIT_VERSION="
