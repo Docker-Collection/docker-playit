@@ -6,9 +6,12 @@ on:
     branches:
       - main
     paths:
-      - playit-beta/**
+      - "playit-beta/**"
+  pull_request:
+    branches:
+      - main
     paths:
-      - playit-beta/**
+      - "playit-beta/**"
 
 concurrency: 
   group: ${{ github.workflow }}-${{ github.ref }}
