@@ -12,7 +12,7 @@ version: '3'
 services:
   playit:
     container_name: playit
-    image: ghcr.io/docker-collection/payit:beta
+    image: ghcr.io/docker-collection/payit-beta:latest
     restart: always
     volumes:
       - ./config:/app/config
