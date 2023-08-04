@@ -15,7 +15,7 @@ trap 'kill ${!}; term_handler' TERM
 
 if [[ -f "config/playit.toml" ]]; then
   echo "Start playit! ..."
-  $playit --secret_path config/playit.toml &
+  $playit --secret_path config/playit.toml > /dev/null &
   pid="$!"
 else
   echo "Config not found, sleeping..."
