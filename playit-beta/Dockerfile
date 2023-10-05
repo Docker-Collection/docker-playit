@@ -11,7 +11,7 @@ RUN wget -O playit "https://github.com/playit-cloud/playit-agent/releases/downlo
 
 RUN chmod +x entrypoint.sh
 
-FROM bitnami/minideb:bullseye@sha256:2bad8384833aa9dbaa6bd0f01cbbf891a955da714331e8b7d5a12a032416bfbc
+FROM bitnami/minideb:bullseye@sha256:c746a383e0a4b9cf7d401c0a6656b29ac4bb2cd2db5f636a9d2803ba55b9f906
 
 ENV DEBIAN_FRONTEND=noninteractive
 
