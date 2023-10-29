@@ -12,7 +12,7 @@ term_handler() {
 
 trap 'kill ${!}; term_handler' TERM
 
-./playit -s -c "config/playit.toml" &
+./playit --secret_path "config/playit.toml" &
 pid="$!"
 
 while :; do
