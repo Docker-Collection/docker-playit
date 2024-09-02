@@ -2,6 +2,12 @@
 
 This is for docker playit.gg program, inside the container!
 
+## Project Archived
+
+> playit has official docker image support now, so this project no longer need it.
+> 
+> Check out https://github.com/playit-cloud/playit-agent
+
 ## Docker Compose Beta
 
 Here is beta version of playit.gg container, please follow the step to setup connection.
